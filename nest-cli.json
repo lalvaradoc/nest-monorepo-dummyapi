@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/dummy-service/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/dummy-service/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/dummy-service",
+  "projects": {
+    "dummy-service": {
+      "type": "application",
+      "root": "apps/dummy-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/dummy-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/dummy-service/tsconfig.app.json"
+      }
+    }
+  }
+}

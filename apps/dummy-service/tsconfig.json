@@ -1,0 +1,19 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "@kosmos/*": [
+                "./*",
+                "application/dtos/*",
+                "application/services/*",
+                "controllers/*",
+                "domains/repositories/*",
+                "domains/services/*",
+                "domains/entities/*",
+                "interfaces/controllers/*",
+                "interfaces/resolvers/*",
+            ],
+        }
+    }
+}
